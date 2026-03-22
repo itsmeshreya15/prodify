@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Login from "./pages/Login";
-import Tasks from "./pages/Tasks";
+import Login from "./pages/Login.jsx";
+import Tasks from "./pages/Task.jsx";
 
 function App() {
   const token = localStorage.getItem("token");
