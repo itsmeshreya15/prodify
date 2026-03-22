@@ -1,8 +1,14 @@
 require('dotenv').config();
 const app = require('./app');
-const connectDB = require('./config/db'); // ✅ ADD THIS
+const connectDB = require('./config/db');
 
-connectDB(); // ✅ ADD THIS
+const cors = require("cors"); 
+
+connectDB();
+
+app.use(cors({
+  origin: "*"
+}));
 
 const PORT = process.env.PORT || 5000;
 

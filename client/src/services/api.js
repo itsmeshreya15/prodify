@@ -2,7 +2,7 @@ import axios from "axios";
 import { refreshToken } from "./auth";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+ baseURL: "https://prodify-ezmo.onrender.com/api",
   withCredentials: true,
 });
 
